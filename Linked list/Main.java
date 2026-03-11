@@ -16,6 +16,8 @@ public class Main {
             list.add(val);
             list.print();
             list.insertback(val);
+            int position=3;
+            list.add(val,position);
 
 
 

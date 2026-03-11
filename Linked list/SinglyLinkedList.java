@@ -71,5 +71,12 @@ public class SinglyLinkedList {
             temp=first.next;
         }
     }
+    public void add(int val,int position){
+        Node temp=first;
+        for(int i=0;i<position-1;i++ ){
+            temp=temp.next;
+
+        }
+    }
     //identify the last before node
 }
