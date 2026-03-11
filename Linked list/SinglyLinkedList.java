@@ -1,5 +1,6 @@
 public class SinglyLinkedList {
     private Node first, last;
+    private int noofnodes;
 
     public SinglyLinkedList() {
         first = null;
@@ -11,16 +12,18 @@ public class SinglyLinkedList {
         if (first == null) {
             first = newNode;
             last = newNode;
+            noofnodes++;
         } else {
             last.next = newNode;
             last = newNode;
+            noofnodes++;
         }
     }
 
     public void print() {
         Node temp = first;
         while (temp != null) {
-            System.out.println(temp.val);
+            System.out.print(temp.val+" ");
             temp = temp.next;
         }
     }
@@ -36,6 +39,7 @@ public class SinglyLinkedList {
     public void ArrayToList(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
             add(arr[i]);
+            noofnodes++;
         }
     }
 
@@ -45,4 +49,27 @@ public class SinglyLinkedList {
             add(Integer.parseInt(arr[i]));
         }
     }
+    public void insertback(int val){
+        add(val);
+    }
+    public void insertfront(int val){
+        Node newNode= new Node(val);
+        if(first==null){
+            first=newNode;
+            last=newNode;
+            noofnodes++;
+        }
+        else{
+            newNode.next=first;
+            first=newNode;
+            noofnodes++;
+        }
+    }
+    public void beforelast(){
+        Node temp=first;
+        for(int i=0;i<noofnodes-1;i++){
+            temp=first.next;
+        }
+    }
+    //identify the last before node
 }

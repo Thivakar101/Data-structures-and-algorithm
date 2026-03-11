@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in))
+        Scanner sc = new Scanner(System.in);
             SinglyLinkedList list = new SinglyLinkedList();
             int val = sc.nextInt();
             int[] arr = {1, 2, 3, 4, 5};
@@ -15,6 +15,10 @@ public class Main {
             list.ArrayToList(arr);
             list.add(val);
             list.print();
+            list.insertback(val);
+
+
+
 
     }
 }
