@@ -1,83 +1,1 @@
-public class SinglyLinkedList {
-    private Node first, last;
-    private int noofnodes;
-
-    public SinglyLinkedList() {
-        first = null;
-        last = null;
-    }
-
-    public void add(int val) {
-        Node newNode = new Node(val);
-        if (first == null) {
-            first = newNode;
-            last = newNode;
-            noofnodes++;
-        } else {
-            last.next = newNode;
-            last = newNode;
-            noofnodes++;
-        }
-    }
-
-    public void print() {
-        Node temp = first;
-        while (temp != null) {
-            System.out.print(temp.val+" ");
-            temp = temp.next;
-        }
-    }
-
-    public void reverseprint() {
-        Node temp = last;
-        while (temp != null) {
-            System.out.println(temp.val);
-            temp = temp.next;
-        }
-    }
-
-    public void ArrayToList(int[] arr) {
-        for (int i = 0; i < arr.length; i++) {
-            add(arr[i]);
-            noofnodes++;
-        }
-    }
-
-    public void StringToList(String str, char delimiter) {
-        String[] arr = str.split(String.valueOf(delimiter));
-        for (int i = 0; i < arr.length; i++) {
-            add(Integer.parseInt(arr[i]));
-        }
-    }
-    public void insertback(int val){
-        add(val);
-    }
-    public void insertfront(int val){
-        Node newNode= new Node(val);
-        if(first==null){
-            first=newNode;
-            last=newNode;
-            noofnodes++;
-        }
-        else{
-            newNode.next=first;
-            first=newNode;
-            noofnodes++;
-        }
-    }
-    public void beforelast(){
-        Node temp=first;
-        for(int i=0;i<noofnodes-1;i++){
-            temp=first.next;
-        }
-    }
-    public void add(int val,int position){
-
-        Node temp=first;
-        for(int i=0;i<position-1;i++ ){
-            temp=temp.next;
-
-        }
-    }
-    //identify the last before node
-}
+public class SinglyLinkedList {    private Node first, last;    private int noofnodes;    public SinglyLinkedList() {        first = null;        last = null;    }    public void add(int val) {        Node newNode = new Node(val);        if (first == null) {            first = newNode;            last = newNode;            noofnodes++;        } else {            last.next = newNode;            last = newNode;            noofnodes++;        }    }    public void print() {        Node temp = first;        while (temp != null) {            System.out.print(temp.val+" ");            temp = temp.next;        }    }    public void reverseprint() {        Node temp = last;        while (temp != null) {            System.out.println(temp.val);            temp = temp.next;        }    }    public void ArrayToList(int[] arr) {        for (int i = 0; i < arr.length; i++) {            add(arr[i]);            noofnodes++;        }    }    public void StringToList(String str, char delimiter) {        String[] arr = str.split(String.valueOf(delimiter));        for (int i = 0; i < arr.length; i++) {            add(Integer.parseInt(arr[i]));        }    }    public void insertback(int val){        add(val);    }    public void insertfront(int val){        Node newNode= new Node(val);        if(first==null){            first=newNode;            last=newNode;            noofnodes++;        }        else{            newNode.next=first;            first=newNode;            noofnodes++;        }    }    public void add(int val,int position){    }    public void  beforelast() {        Node temp = first;        while (temp.next != last) {            temp = temp.next;        }    }    // Delete first node    public void deletefront() {        if (first == null) return;        first = first.next;        if (first == null) last = null; // list became empty        noofnodes--;    }}
