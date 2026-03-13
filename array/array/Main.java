@@ -75,8 +75,6 @@
 //        System.out.println("Right by 2:   " + Arrays.toString(right));
 //    }
 //}
-//```
-//
 //        **Output:**
 //        ```
 //Original:     [1, 2, 3, 4, 5]
