@@ -41,7 +41,7 @@ public class CircularQueue {
     }
 
     public void display() {
-        if (isEmpty()) {
+        if (front==-1 && rear==0) {
             System.out.println("Queue is empty");
             return;
         }
