@@ -20,6 +20,13 @@ public class BST {
             root.right = insert(root.right, data);
         }
         return root;
+        public void inorder print(){
+            inorder(root);
+        }
+    }
+
+
+    private static void inorder(BSTNode root) {
     }
 
 

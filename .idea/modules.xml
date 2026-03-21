@@ -3,11 +3,14 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/array/array.iml" filepath="$PROJECT_DIR$/array/array.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binary tree/binary tree.iml" filepath="$PROJECT_DIR$/binary tree/binary tree.iml" />
+      <module fileurl="file://$PROJECT_DIR$/binarytree/binarytree.iml" filepath="$PROJECT_DIR$/binarytree/binarytree.iml" />
       <module fileurl="file://$PROJECT_DIR$/bst/bst.iml" filepath="$PROJECT_DIR$/bst/bst.iml" />
       <module fileurl="file://$PROJECT_DIR$/circular queue/circular queue.iml" filepath="$PROJECT_DIR$/circular queue/circular queue.iml" />
       <module fileurl="file://$PROJECT_DIR$/datastructures and algorithm.iml" filepath="$PROJECT_DIR$/datastructures and algorithm.iml" />
       <module fileurl="file://$PROJECT_DIR$/queue/queue.iml" filepath="$PROJECT_DIR$/queue/queue.iml" />
       <module fileurl="file://$PROJECT_DIR$/stack/stack.iml" filepath="$PROJECT_DIR$/stack/stack.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test run/test run.iml" filepath="$PROJECT_DIR$/test run/test run.iml" />
     </modules>
   </component>
 </project>
