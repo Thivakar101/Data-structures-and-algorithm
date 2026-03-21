@@ -23,6 +23,7 @@ class cll {
 
         }
         else{
+            newnode.previous=last;
             last.next=newnode;
             last=newnode;
         }
@@ -34,9 +35,19 @@ class cll {
             temp=temp.next;
         }
     }
+    public void reverseprint(){
+        Node temp=last;
+        while(temp!=null){
+            System.out.print(temp.data+" ");
+            temp=temp.previous;
+        }
+    }
     public void removefront(){
         if(first==null) return;
+
         first=first.next;
+        first.previous=null;
+
         return;
     }
     public void removelast(){
@@ -45,13 +56,8 @@ class cll {
             last=null;
             return;
         }
-        Node temp=first;
-        while(temp!=last){
-            temp=temp.next;
-        }
-        temp.next=null;
-        temp=last;
-        return;
+       last=last.previous;
+        last.next=null;
 
     }
     public void remove(int position){
@@ -65,8 +71,10 @@ class cll {
 
         }
         if(temp.next==last){
-            temp=last;
+
+            removelast();
         }
+        temp.next.next.previous=temp;
         temp.next=temp.next.next;
     }
 
