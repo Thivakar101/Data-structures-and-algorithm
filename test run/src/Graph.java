@@ -66,7 +66,9 @@ import java.util.List;
 //    }
 //}
 class edge{
-    int u,v;
+    int u,
+
+
     //this is an edge object
     edge(int u,int v){
         this.u=u;
@@ -75,10 +77,15 @@ class edge{
     }
     class edgelist{
     private Object ArrayList;
-    List<edge>ls= new ArrayList<>();
+    static List<edge>ls= new ArrayList<>();
     public static void add(int u, int v){
         //the list stores the edge object whereas the object stores the u and the v
         ls.add(new edge(u,v));
+    }
+    public void display(){
+        for(edge e: ls){
+            System.out.println(e.u+" "e.v);
+        }
     }
 
 
