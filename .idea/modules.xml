@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/binarytree/binarytree.iml" filepath="$PROJECT_DIR$/binarytree/binarytree.iml" />
       <module fileurl="file://$PROJECT_DIR$/bst/bst.iml" filepath="$PROJECT_DIR$/bst/bst.iml" />
       <module fileurl="file://$PROJECT_DIR$/circular queue/circular queue.iml" filepath="$PROJECT_DIR$/circular queue/circular queue.iml" />
+      <module fileurl="file://$PROJECT_DIR$/circularlinkedlist/circularlinkedlist.iml" filepath="$PROJECT_DIR$/circularlinkedlist/circularlinkedlist.iml" />
       <module fileurl="file://$PROJECT_DIR$/datastructures and algorithm.iml" filepath="$PROJECT_DIR$/datastructures and algorithm.iml" />
       <module fileurl="file://$PROJECT_DIR$/queue/queue.iml" filepath="$PROJECT_DIR$/queue/queue.iml" />
       <module fileurl="file://$PROJECT_DIR$/stack/stack.iml" filepath="$PROJECT_DIR$/stack/stack.iml" />
