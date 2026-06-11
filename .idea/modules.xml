@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/array/array.iml" filepath="$PROJECT_DIR$/array/array.iml" />
+      <module fileurl="file://$PROJECT_DIR$/avltree/avltree.iml" filepath="$PROJECT_DIR$/avltree/avltree.iml" />
       <module fileurl="file://$PROJECT_DIR$/binary tree/binary tree.iml" filepath="$PROJECT_DIR$/binary tree/binary tree.iml" />
       <module fileurl="file://$PROJECT_DIR$/binarytree/binarytree.iml" filepath="$PROJECT_DIR$/binarytree/binarytree.iml" />
       <module fileurl="file://$PROJECT_DIR$/bst/bst.iml" filepath="$PROJECT_DIR$/bst/bst.iml" />

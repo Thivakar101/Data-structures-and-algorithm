@@ -41,7 +41,7 @@ class deq{
         }
         first.next.prev=null;
         first=first.next;
-        return;
+
     }
     void deletelast(){
         if(first==null){
